@@ -19,6 +19,7 @@ export const NAV_LINKS = [
 export const PARTNERS = [
   { name: "IIT", logo: "https://res.cloudinary.com/p9t0mxll/image/upload/v1783212471/IIT_2_uo3qp3.png" },
   { name: "IEEE IIT SB", logo: "https://res.cloudinary.com/p9t0mxll/image/upload/v1783212514/1.COLORS_copy-8_isf7rp.png", width: 220, height: 96, padding: "4px 6px" },
+  { name: "IEEE EMBS EPS", logo: "https://res.cloudinary.com/p9t0mxll/image/upload/v1783244113/739155565_2291857001629312_2664269170560721414_n_vp6mg3.jpg", width: 220, height: 96, padding: "4px 6px" },
 ];
 
 export const EVENTS = [
