@@ -5,38 +5,9 @@
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/p9t0mxll/image/upload/v1783210345/Nobglogo_xt2iq6.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEEE EMBS Student Branch | IIT</title>
-    <style>
-      #app-loader {
-        position: fixed;
-        inset: 0;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 18px;
-        background: #0A0E1A;
-        transition: opacity 0.4s ease;
-      }
-      #app-loader img { width: 84px; height: auto; opacity: 0.95; }
-      #app-loader .app-loader-spinner {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 3px solid rgba(45, 212, 199, 0.25);
-        border-top-color: #2DD4C7;
-        animation: app-loader-spin 0.8s linear infinite;
-      }
-      @keyframes app-loader-spin { to { transform: rotate(360deg); } }
-      #app-loader.app-loader-hide { opacity: 0; pointer-events: none; }
-    </style>
   </head>
   <body>
     <div id="root"></div>
-    <div id="app-loader" aria-hidden="true">
-      <img src="data:image/png;base64,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" alt="" />
-      <div class="app-loader-spinner"></div>
-    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

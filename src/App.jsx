@@ -26,20 +26,9 @@ export default function App() {
     };
     window.addEventListener("scroll", onScroll);
     const t = setTimeout(() => setHeroIn(true), 80);
-
-    const loader = document.getElementById("app-loader");
-    let removeLoader;
-    const t2 = setTimeout(() => {
-      if (!loader) return;
-      loader.classList.add("app-loader-hide");
-      removeLoader = setTimeout(() => loader.remove(), 400);
-    }, 500);
-
     return () => {
       window.removeEventListener("scroll", onScroll);
       clearTimeout(t);
-      clearTimeout(t2);
-      clearTimeout(removeLoader);
     };
   }, []);
 
